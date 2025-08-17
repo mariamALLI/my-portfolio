@@ -9,9 +9,9 @@ export const Home = () => {
           Hi, I'm Mariam Alli
         </h1>
         <p className="text-gray-300 text-lg mb-8 max-w-lg mx-auto">
-          I'm a software engineer passionate about building beautiful and
-          functional web applications. I enjoy learning new technologies,
-          working on personal projects, and am seeking a full-time software
+          I'm a frontend engineer passionate about building beautiful and
+          functional web applications. I enjoy learning new technologies, applying the use of AI in my projects,
+          contributing to open-source projects, and am seeking a full-time frontend
           engineering position. Feel free to reach out!
         </p>
 

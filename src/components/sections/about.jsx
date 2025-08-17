@@ -1,3 +1,6 @@
+import { motion } from 'framer-motion';
+import '../../styles/about.css';
+
 export const About = () => {
 const frontendSkil = [
     { name: "HTML", icon: "html5" },
@@ -15,6 +18,7 @@ const frontendSkil = [
 ]
 
     return (
+ 
         <section
         id="about"
         className="min-h-screen flex items-center justify-center py-20"
@@ -24,9 +28,9 @@ const frontendSkil = [
             bg-clip-text text-transparent text-center">
                 About Me
                 </h2>
-           
-           <div className="mb-6 rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
-              <p className="text-gray-300 mb-6">
+
+           <div className="mb-6 rounded-xl p-8 border-purple-500/30 border hover:-translate-y-1 transition-all duration-500">
+              <p className="text-gray-300 mb-6 text-[1.125rem] text-center leading-8">
             I specialize in front-end development, focusing on building responsive
             and user-friendly interfaces. My journey in web development started with a
             curiosity to understand how the web works, and it has since evolved
@@ -34,6 +38,8 @@ const frontendSkil = [
             like React, Tailwind CSS, and JavaScript to bring my ideas to life.
             </p>
            </div>
+
+       
           
           <div className=" rounded-xl p-8 mb-6 hover:-translate-y-1 transition-all">
             <div className="rounded-xl p-6 b hover:-translate-y-1 transition-all">
@@ -42,7 +48,7 @@ const frontendSkil = [
                 Frontend Skills
                     
                 </h3>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap ml-[2rem] mr-[2rem]">
                     {frontendSkil.map((skill) => (
                         <div
                             key={skill.name}
@@ -60,7 +66,7 @@ const frontendSkil = [
           
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-                    <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
+                    <div className="p-6 rounded-xl border-purple-500/30 border hover:-translate-y-1 transition-all">
                          <h3 className="text-2xl text-center font-bold mb-4 bg-gradient-to-r from-purple-700 to-pink-600 bg-clip-text text-transparent">
                             Education 
                         </h3>
@@ -75,7 +81,7 @@ const frontendSkil = [
                         </ul>
                     </div>
 
-                    <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
+                    <div className="p-6 rounded-xl border-purple-500/30 border hover:-translate-y-1 transition-all">
                          <h3 className="text-2xl text-center font-bold mb-4 bg-gradient-to-r from-purple-700 to-pink-600 bg-clip-text text-transparent">
                             Work Experience 
                         </h3>
@@ -85,6 +91,8 @@ const frontendSkil = [
                                 <li> Worked on personal projects to build a portfolio</li>
                                 <li> Participated in hands-on learning through platforms like FreeCodeCamp and Scrimba</li>
                                 <li>Built capstone project for diploma certification for Altschool</li>
+                                <li>Contributed to open-source projects on GitHub [Lucide icons]</li>
+                                <li>Collaborated with peers on Altschool Althub project as the lead frontend developer and assistant dev team lead</li>
                             </ul>
  
 
@@ -92,7 +100,7 @@ const frontendSkil = [
                     </div>
                 </div>
 
-        </div>
+        </div>   
         </section>
     );
 }

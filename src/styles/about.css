@@ -1,0 +1,17 @@
+.animated-border {
+  /* Simulated border using padding and gradient background */
+  padding: 4px;
+  border-radius: 16px;
+  background: linear-gradient(90deg, #ff00cc, #3333ff, #00ff99, #ff00cc);
+  background-size: 400% 400%;
+  box-sizing: border-box;
+  /* Ensures child content doesn’t overflow */
+  overflow: hidden;
+}
+
+.about-content {
+  border-radius: 12px;
+  background: #1a1a1a;
+  padding: 32px;
+  color: white;
+}
