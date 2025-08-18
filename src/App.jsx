@@ -5,6 +5,7 @@ import { Navbar } from "./components/navbar";
 import { MobileMenu } from "./components/mobileMenu";
 import { Home } from "/src/components/sections/home.jsx";
 import { About } from "/src/components/sections/about.jsx";
+import { Projects } from "/src/components/sections/projects";
 
 function App() {
  //track the loading state
@@ -23,6 +24,7 @@ function App() {
       <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Home />
       <About />
+      <Projects />
     </div>
     </>
   )

@@ -20,16 +20,64 @@ export const Navbar = ({menuOpen, setMenuOpen}) => {
                 </div>
 
                 <div className="hidden md:flex items-center space-x-8">
-                    <a href="#home" className="text-gray-300 hover:text-purple-600 transition-colors">
-                        Home   
+                    <a href="#home" className="text-gray-300 transition delay-150 duration-300 ease-in-out hover:text-purple-600 transition-colors relative
+                    transition-colors
+                    after:content-['']
+                    after:absolute
+                    after:left-0
+                    after:bottom-[-1rem]
+                    after:h-1
+                    after:w-full
+                    after:bg-purple-600
+                    after:scale-x-0
+                    after:transition-transform
+                    after:origin-left
+                    hover:after:scale-x-100">
+                        Home
                     </a>
-                    <a href="#about" className="text-gray-300 hover:text-purple-600 transition-colors">
+                    <a href="#about"  className="text-gray-300 transition delay-150 duration-300 ease-in-out hover:text-purple-600 transition-colors relative
+                    transition-colors
+                    after:content-['']
+                    after:absolute
+                    after:left-0
+                    after:bottom-[-1rem]
+                    after:h-1
+                    after:w-full
+                    after:bg-purple-600
+                    after:scale-x-0
+                    after:transition-transform
+                    after:origin-left
+                    hover:after:scale-x-100">
                         About
                     </a>
-                    <a href="#projects" className="text-gray-300 hover:text-purple-600 transition-colors">
+                    <a href="#projects"  className="text-gray-300 transition delay-150 duration-300 ease-in-out hover:text-purple-600 transition-colors relative
+                    transition-colors
+                    after:content-['']
+                    after:absolute
+                    after:left-0
+                    after:bottom-[-1rem]
+                    after:h-1
+                    after:w-full
+                    after:bg-purple-600
+                    after:scale-x-0
+                    after:transition-transform
+                    after:origin-left
+                    hover:after:scale-x-100">
                         Projects
                     </a>
-                    <a href="#contact" className="text-gray-300 hover:text-purple-600 transition-colors">
+                    <a href="#contact"  className="text-gray-300 transition delay-150 duration-300 ease-in-out hover:text-purple-600 transition-colors relative
+                    transition-colors
+                    after:content-['']
+                    after:absolute
+                    after:left-0
+                    after:bottom-[-1rem]
+                    after:h-1
+                    after:w-full
+                    after:bg-purple-600
+                    after:scale-x-0
+                    after:transition-transform
+                    after:origin-left
+                    hover:after:scale-x-100">
                         Contact
                     </a>
                     

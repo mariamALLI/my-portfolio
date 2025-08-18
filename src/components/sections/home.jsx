@@ -33,6 +33,21 @@ export const Home = () => {
             </a>
 
         </div>
+
+        {/* <SocialLinks /> */}
+        <div className="mt-8">
+          <div className="flex justify-center space-x-4">
+            <a href="https://x.com/mariam_oalli" target="_blank" rel="noopener noreferrer" className="transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500">
+              <img src="./icons/twitter.png" alt="Twitter" className="w-6 h-6" />
+            </a>
+            <a href="https://github.com/mariamALLI" target="_blank" rel="noopener noreferrer" className="transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500">
+              <img src="./icons/github.png" alt="GitHub" className="w-6 h-6" />
+            </a>
+            <a href="https://www.linkedin.com/in/mariam-alli-a7964b21a/" target="_blank" rel="noopener noreferrer" className="transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500">
+              <img src="./icons/linkedin.png" alt="LinkedIn" className="w-6 h-6" />
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );
