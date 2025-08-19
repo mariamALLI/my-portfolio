@@ -1,17 +1,25 @@
 import { LoadingScreen } from "./components/loadingScreen";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./index.css";
 import { Navbar } from "./components/navbar";
 import { MobileMenu } from "./components/mobileMenu";
 import { Home } from "/src/components/sections/home.jsx";
 import { About } from "/src/components/sections/about.jsx";
 import { Projects } from "/src/components/sections/projects";
+import { Contact } from "/src/components/sections/contact";
+import emailjs from "@emailjs/browser";
 
 function App() {
  //track the loading state
   const [isLoading, setIsLoading] = useState(false);
   //state for menu
   const [menuOpen, setMenuOpen] = useState(false);
+
+useEffect(function() {
+  // Add any side effects or data fetching logic here
+  emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+}, [])
+
 
   return (
     <>
@@ -25,6 +33,7 @@ function App() {
       <Home />
       <About />
       <Projects />
+      <Contact />
     </div>
     </>
   )

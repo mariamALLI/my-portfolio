@@ -18,7 +18,7 @@ const frontendSkil = [
  
         <section
         id="about"
-        className="min-h-screen flex items-center justify-center py-20"
+        className="about min-h-screen flex items-center justify-center py-20"
         >
         <div className="max-w-3xl max-auto px-4">
             <h2 className="text-4xl font-bold mb-8 bg-gradient-to-r from-purple-700 to-pink-600 

@@ -143,12 +143,15 @@
 
 /* contact section */
 
-.contact {
+.contact, .about {
   padding: 6rem 5%;
-  background: var(--section-bg);
+  /* background: var(--section-bg); */
   position: relative;
 }
 
+
+.about::before,
+.projects::before,
 .contact::before {
   content: "";
   position: absolute;
