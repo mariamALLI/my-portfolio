@@ -50,8 +50,9 @@ export const Contact = () => {
             setFormStatus({ success: true, submitting: false, error: false, message: "Message sent successfully!" });
             setFormData({ name: "", email: "", message: "" });
         }
-        catch {
-            setFormStatus({ success: false, submitting: false, error: true, message: "Failed to send message." });
+        catch (error) {
+          console.error(error);
+          setFormStatus({ success: false, submitting: false, error: true, message: "Failed to send message." });
         }
     }
 
