@@ -40,17 +40,20 @@ export const Projects = () => {
         whileInView="animate"
         viewport={{ once: true }}
       >
-        <motion.div
-          className="project-card"
-          variants={fadeInUp}
-          whileHover={{ y: -10, transition: { duration: 0.2 } }}
-        >
+          <a href="https://ecomerce-pg.netlify.app/" target="_blank" rel="noopener noreferrer">
+            <motion.div
+              className="project-card"
+              variants={fadeInUp}
+              whileHover={{ y: -10, transition: { duration: 0.2 } }}
+            >
           <motion.div
             className="project-image"
             style={{ backgroundImage: "url('./project-images/ecommerce.jpg')" }}
             whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
           />
-          <h3> E-commerce Page</h3>
+          <h3>
+            E-commerce Page
+          </h3>
           <p>
             A modern E-commerce product page built with React, shadcn and framer motion integration,
             featuring real-time product visualization and smooth animations.
@@ -61,13 +64,15 @@ export const Projects = () => {
             <span><img src="./icons/tailwindcss.png" alt="tailwindcss icon" /></span>
             <span><img src="./icons/motion.png" alt="motion icon" /></span>
           </div>
-        </motion.div>
+            </motion.div>
+          </a>
 
-        <motion.div
-          className="project-card"
-          variants={fadeInUp}
-          whileHover={{ y: -10, transition: { duration: 0.2 } }}
-        >
+        <a href="https://shoplistmaker.netlify.app/" target="_blank" rel="noopener noreferrer">
+          <motion.div
+            className="project-card"
+            variants={fadeInUp}
+            whileHover={{ y: -10, transition: { duration: 0.2 } }}
+          >
           <motion.div
             className="project-image"
             style={{
@@ -87,13 +92,15 @@ export const Projects = () => {
             <span><img src="./icons/shadcn.png" alt="shadcn icon" /></span>
             <span><img src="./icons/tanstack.png" alt="tanstack icon" /></span>
           </div>
-        </motion.div>
+          </motion.div>
+        </a>
 
-        <motion.div
-          className="project-card"
-          variants={fadeInUp}
-          whileHover={{ y: -10, transition: { duration: 0.2 } }}
-        >
+        <a href="https://interactive-crd.netlify.app/" target="_blank" rel="noopener noreferrer">
+          <motion.div
+            className="project-card"
+            variants={fadeInUp}
+            whileHover={{ y: -10, transition: { duration: 0.2 } }}
+          >
           <motion.div
             className="project-image"
             style={{
@@ -105,7 +112,7 @@ export const Projects = () => {
           <h3>Interactive Card</h3>
           <p>
             A sleek interactive card component with real time interactions and
-            responsive design.
+            responsive design, built with React and TypeScript with skeleton loading animations.
           </p>
           <div className="project-tech">
             <span><img src="./icons/react.png" alt="react icon" /></span>
@@ -113,14 +120,16 @@ export const Projects = () => {
             <span><img src="./icons/css3.png" alt="css icon" /></span>
             <span><img src="./icons/vite.png" alt="vite icon" /></span>
           </div>
-        </motion.div>
+          </motion.div>
+        </a>
 
 
-        <motion.div
-          className="project-card"
-          variants={fadeInUp}
-          whileHover={{ y: -10, transition: { duration: 0.2 } }}
-        >
+        <a href="https://mariam-alli-todo-app.netlify.app/" target="_blank" rel="noopener noreferrer">
+          <motion.div
+            className="project-card"
+            variants={fadeInUp}
+            whileHover={{ y: -10, transition: { duration: 0.2 } }}
+          >
           <motion.div
             className="project-image"
             style={{
@@ -140,14 +149,16 @@ export const Projects = () => {
             <span><img src="./icons/vite.png" alt="vite icon" /></span>
             <span><img src="./icons/tanstack.png" alt="tanstack icon" /></span>
           </div>
-        </motion.div>
+          </motion.div>
+        </a>
 
 
-        <motion.div
-          className="project-card"
-          variants={fadeInUp}
-          whileHover={{ y: -10, transition: { duration: 0.2 } }}
-        >
+        <a href="https://spaceturismwebpage.netlify.app/" target="_blank" rel="noopener noreferrer">
+          <motion.div
+            className="project-card"
+            variants={fadeInUp}
+            whileHover={{ y: -10, transition: { duration: 0.2 } }}
+          >
           <motion.div
             className="project-image"
             style={{
@@ -166,14 +177,16 @@ export const Projects = () => {
             <span><img src="./icons/tailwindcss.png" alt="tailwind icon" /></span>
             <span><img src="./icons/vite.png" alt="vite icon" /></span>
           </div>
-        </motion.div>
+          </motion.div>
+        </a>
 
 
-        <motion.div
-          className="project-card"
-          variants={fadeInUp}
-          whileHover={{ y: -10, transition: { duration: 0.2 } }}
-        >
+        <a href="https://instaspot.netlify.app/" target="_blank" rel="noopener noreferrer">
+          <motion.div
+            className="project-card"
+            variants={fadeInUp}
+            whileHover={{ y: -10, transition: { duration: 0.2 } }}
+          >
           <motion.div
             className="project-image"
             style={{
@@ -193,7 +206,8 @@ export const Projects = () => {
             <span><img src="./icons/css3.png" alt="css icon" /></span>
             <span><img src="./icons/vite.png" alt="vite icon" /></span>
           </div>
-        </motion.div>
+          </motion.div>
+        </a>
       </motion.div>
     </motion.section>
   );
