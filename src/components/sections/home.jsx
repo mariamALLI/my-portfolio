@@ -8,7 +8,7 @@ export const Home = () => {
     >
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
-          className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-transparent to-cyan-900/20"
+          className="absolute inset-0 bg-gradient-to-br from-blue-900/30 via-transparent to-cyan-900/30"
           animate={{
             scale: [1, 1.2, 1],
             rotate: [0, 90, 0],

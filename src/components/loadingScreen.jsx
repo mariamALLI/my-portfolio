@@ -28,15 +28,15 @@ useEffect(() => {
 
     return (
         <div className="flex flex-col items-center justify-center bg-black text-gray-100 fixed inset-0 z-50"> 
-            <div className="mb-4 text-6xl font-bold">
-                <h1>
+            <div className="mb-4 text-3xl font-bold text-center px-4">
+                <h1 className="text-center">
                    {text}
                     <span className="animate-blink ml-1"> | </span>
                 </h1>
             </div>
             
             <div className="w-[200px] h-[2px] bg-gray-800 rounded relative overflow-hidden">
-                <div className="w-[40%] h-full bg-purple-600 shadow-[0_0_15px_#3b82f6] animate-loading-bar ">
+                <div className="w-[40%] h-full bg-cyan-600 shadow-[0_0_15px_#3b82f6] animate-loading-bar ">
                 </div>
             </div>  
 
