@@ -62,43 +62,60 @@ export const Contact = () => {
       className="contact"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      viewport={{ once: true }}
+      viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.6 }}
     >
-      <motion.h2 variants={fadeInUp} initial="initial" animate="animate" viewport={{ once: true }}>
+      <motion.h2
+        variants={fadeInUp}
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true }}
+        className="text-4xl font-bold mb-12 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent text-center"
+      >
         Get in Touch
       </motion.h2>
 
-      <motion.div className="contact-content" variants={fadeInUp}>
+      <motion.div
+        className="contact-content"
+        variants={fadeInUp}
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true }}
+      >
         <motion.form className="contact-form" variants={staggerContainer} onSubmit={handleSubmit}>
           <motion.input
             type="text"
             placeholder="Your Name"
             name="name"
-            whileFocus={{ scale: 1.02 }}
+            whileFocus={{ scale: 1.02, y: -2 }}
             required
             onChange={handleChangeInput}
+            variants={fadeInUp}
           />
           <motion.input
             type="email"
             placeholder="Your Email"
             name="email"
-            whileFocus={{ scale: 1.02 }}
+            whileFocus={{ scale: 1.02, y: -2 }}
             required
             onChange={handleChangeInput}
+            variants={fadeInUp}
           />
           <motion.textarea
             placeholder="Your Message"
             name="message"
-            whileFocus={{ scale: 1.02 }}
+            whileFocus={{ scale: 1.02, y: -2 }}
             required
             onChange={handleChangeInput}
+            variants={fadeInUp}
           ></motion.textarea>
-          <motion.button className='submit-btn' 
-          type="submit" 
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          disabled={formStatus.submitting}
+          <motion.button
+            className='submit-btn'
+            type="submit"
+            whileHover={{ scale: 1.05, y: -2 }}
+            whileTap={{ scale: 0.95 }}
+            disabled={formStatus.submitting}
+            variants={fadeInUp}
           >
             {formStatus.submitting ? "Sending..." : "Send Message"}
           </motion.button>

@@ -1,15 +1,15 @@
 import { motion } from "framer-motion";
 
 const fadeInUp = {
-  initial: { opacity: 0, y: 20 },
+  initial: { opacity: 0, y: 60 },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6 },
+  transition: { duration: 0.6, ease: "easeOut" },
 };
 
 const staggerContainer = {
   animate: {
     transition: {
-      staggerChildren: 0.1,
+      staggerChildren: 0.15,
     },
   },
 };
@@ -28,8 +28,8 @@ export const Projects = () => {
         variants={fadeInUp}
         initial="initial"
         whileInView="animate"
-        viewport={{ once: true }}
-        className="text-4xl font-bold mb-8 bg-gradient-to-r from-purple-700 to-pink-600 bg-clip-text text-transparent text-center"
+        viewport={{ once: true, amount: 0.3 }}
+        className="text-4xl font-bold mb-12 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent text-center"
       >
         My Projects
       </motion.h2>
@@ -38,18 +38,21 @@ export const Projects = () => {
         variants={staggerContainer}
         initial="initial"
         whileInView="animate"
-        viewport={{ once: true }}
+        viewport={{ once: true, amount: 0.2 }}
       >
           <a href="https://ecomerce-pg.netlify.app/" target="_blank" rel="noopener noreferrer">
             <motion.div
               className="project-card"
               variants={fadeInUp}
-              whileHover={{ y: -10, transition: { duration: 0.2 } }}
+              whileHover={{ y: -15, scale: 1.03, transition: { duration: 0.3, ease: "easeOut" } }}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
             >
           <motion.div
             className="project-image"
             style={{ backgroundImage: "url('./project-images/ecommerce.jpg')" }}
-            whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
+            whileHover={{ scale: 1.1, transition: { duration: 0.4 } }}
           />
           <h3>
             E-commerce Page
