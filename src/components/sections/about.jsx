@@ -41,20 +41,21 @@ const frontendSkil = [
         >
         <div className="max-w-3xl max-auto px-4">
             <motion.h2
-              className="text-4xl font-bold mb-12 bg-gradient-to-r from-blue-400 to-cyan-400
+              className="text-5xl font-bold mb-12 bg-gradient-to-r from-pink-400 via-purple-400 to-cyan-400
               bg-clip-text text-transparent text-center"
+              style={{ fontFamily: "Fredoka, sans-serif" }}
               variants={fadeInUp}
             >
-                About Me
+                🌟 About Me
             </motion.h2>
 
            <motion.div
-             className="mb-8 rounded-xl p-8 border border-cyan-500/30 bg-gradient-to-br from-gray-900/50 to-gray-800/50 backdrop-blur-sm shadow-2xl relative overflow-hidden group"
+             className="mb-8 rounded-3xl p-8 border-4 border-pink-500/40 bg-gradient-to-br from-purple-900/30 to-pink-900/30 backdrop-blur-sm shadow-2xl shadow-pink-500/20 relative overflow-hidden group"
              variants={fadeInUp}
-             whileHover={{ y: -5 }}
-             transition={{ duration: 0.3 }}
+             whileHover={{ y: -8, rotate: 1, scale: 1.02 }}
+             transition={{ duration: 0.3, type: "spring" }}
            >
-              <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute inset-0 bg-gradient-to-br from-pink-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <p className="text-gray-300 text-[1.125rem] text-center leading-8 relative z-10">
             I specialize in front-end development, focusing on building responsive
             and user-friendly interfaces. My journey in web development started with a
@@ -71,9 +72,9 @@ const frontendSkil = [
             variants={fadeInUp}
           >
             <div className="rounded-xl p-6">
-                <h3 className="text-2xl text-center font-bold mb-6 bg-gradient-to-r from-blue-400 to-cyan-400
-                bg-clip-text text-transparent">
-                Frontend Skills
+                <h3 className="text-3xl text-center font-bold mb-6 bg-gradient-to-r from-yellow-400 to-pink-400
+                bg-clip-text text-transparent" style={{ fontFamily: "Fredoka, sans-serif" }}>
+                🚀 Frontend Skills
                 </h3>
                 <motion.div
                   className="flex flex-wrap justify-center gap-3"
@@ -93,9 +94,9 @@ const frontendSkil = [
                             whileHover={{ scale: 1.1, rotate: 3 }}
                             transition={{ type: "spring", stiffness: 300 }}
                         >
-                            <i className={`devicon-${skill.icon}-plain text-xl mr-2 text-cyan-400`}></i>
-                            <span className="bg-cyan-600/10 text-cyan-300 py-2 px-4 rounded-full text-sm border border-cyan-500/30
-                            hover:bg-cyan-600/20 hover:shadow-[0_2px_12px_rgba(34,211,238,0.3)] transition-all">{skill.name}</span>
+                            <i className={`devicon-${skill.icon}-plain text-xl mr-2 text-pink-400`}></i>
+                            <span className="bg-gradient-to-r from-pink-500/20 to-purple-500/20 text-yellow-300 py-2 px-5 rounded-full text-sm border-2 border-pink-400/40 font-semibold
+                            hover:from-purple-500/30 hover:to-pink-500/30 hover:shadow-[0_4px_20px_rgba(236,72,153,0.5)] hover:scale-110 transition-all" style={{ fontFamily: "Poppins, sans-serif" }}>{skill.name}</span>
                         </motion.div>
                     ))}
                 </motion.div>
@@ -111,14 +112,14 @@ const frontendSkil = [
                   viewport={{ once: true }}
                 >
                     <motion.div
-                      className="p-6 rounded-xl border border-cyan-500/30 bg-gradient-to-br from-gray-900/50 to-gray-800/50 backdrop-blur-sm shadow-xl relative overflow-hidden group"
+                      className="p-6 rounded-2xl border-3 border-cyan-500/40 bg-gradient-to-br from-cyan-900/30 to-blue-900/30 backdrop-blur-sm shadow-xl shadow-cyan-500/20 relative overflow-hidden group"
                       variants={fadeInUp}
-                      whileHover={{ y: -5, scale: 1.02 }}
-                      transition={{ duration: 0.3 }}
+                      whileHover={{ y: -8, scale: 1.03, rotate: -1 }}
+                      transition={{ duration: 0.3, type: "spring" }}
                     >
-                      <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-cyan-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                      <h3 className="text-2xl text-center font-bold mb-4 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent relative z-10">
-                            Education
+                      <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                      <h3 className="text-2xl text-center font-bold mb-4 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent relative z-10" style={{ fontFamily: "Fredoka, sans-serif" }}>
+                            📚 Education
                         </h3>
                         <ul className="relative z-10">
                             <li><strong>Diploma in Software Engineering (Frontend)</strong> - AltSchool Africa (2024/25)</li>
@@ -132,14 +133,14 @@ const frontendSkil = [
                     </motion.div>
 
                     <motion.div
-                      className="p-6 rounded-xl border border-cyan-500/30 bg-gradient-to-br from-gray-900/50 to-gray-800/50 backdrop-blur-sm shadow-xl relative overflow-hidden group"
+                      className="p-6 rounded-2xl border-3 border-purple-500/40 bg-gradient-to-br from-purple-900/30 to-pink-900/30 backdrop-blur-sm shadow-xl shadow-purple-500/20 relative overflow-hidden group"
                       variants={fadeInUp}
-                      whileHover={{ y: -5, scale: 1.02 }}
-                      transition={{ duration: 0.3 }}
+                      whileHover={{ y: -8, scale: 1.03, rotate: 1 }}
+                      transition={{ duration: 0.3, type: "spring" }}
                     >
-                      <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                      <h3 className="text-2xl text-center font-bold mb-4 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent relative z-10">
-                            Work Experience
+                      <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-pink-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                      <h3 className="text-2xl text-center font-bold mb-4 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent relative z-10" style={{ fontFamily: "Fredoka, sans-serif" }}>
+                            💼 Work Experience
                         </h3>
                         <div className="text-gray-100 mb-6 mt-2 text-sm font-thin leading-8 relative z-10">
                             <ul className="list-disc list-inside space-y-2">

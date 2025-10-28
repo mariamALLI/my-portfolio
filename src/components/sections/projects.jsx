@@ -29,9 +29,10 @@ export const Projects = () => {
         initial="initial"
         whileInView="animate"
         viewport={{ once: true, amount: 0.3 }}
-        className="text-4xl font-bold mb-12 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent text-center"
+        className="text-5xl font-bold mb-12 bg-gradient-to-r from-yellow-400 via-pink-400 to-purple-400 bg-clip-text text-transparent text-center"
+        style={{ fontFamily: "Fredoka, sans-serif" }}
       >
-        My Projects
+        🎨 My Projects
       </motion.h2>
       <motion.div
         className="project-grid"

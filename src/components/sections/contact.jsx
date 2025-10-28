@@ -70,9 +70,10 @@ export const Contact = () => {
         initial="initial"
         whileInView="animate"
         viewport={{ once: true }}
-        className="text-4xl font-bold mb-12 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent text-center"
+        className="text-5xl font-bold mb-12 bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent text-center"
+        style={{ fontFamily: "Fredoka, sans-serif" }}
       >
-        Get in Touch
+        📬 Get in Touch
       </motion.h2>
 
       <motion.div

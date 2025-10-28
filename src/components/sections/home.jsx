@@ -28,12 +28,18 @@ export const Home = () => {
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <motion.h1
-          className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-cyan-400 to-teal-400 bg-clip-text text-transparent"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+          className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-pink-400 via-yellow-400 to-cyan-400 bg-clip-text text-transparent"
+          style={{ fontFamily: "Fredoka, sans-serif" }}
+          initial={{ opacity: 0, y: 30, scale: 0.8 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{
+            duration: 0.8,
+            delay: 0.2,
+            type: "spring",
+            stiffness: 200
+          }}
         >
-          Hi, I'm Mariam Alli
+          Hi, I'm Mariam Alli 👋
         </motion.h1>
 
         <motion.p
@@ -56,28 +62,37 @@ export const Home = () => {
         >
           <motion.a
             href="#projects"
-            className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white py-3 px-6 rounded-lg font-medium relative overflow-hidden group"
-            whileHover={{ scale: 1.05, y: -2 }}
-            whileTap={{ scale: 0.95 }}
+            className="bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 text-white py-4 px-8 rounded-full font-bold text-lg relative overflow-hidden shadow-lg shadow-pink-500/50"
+            style={{ fontFamily: "Fredoka, sans-serif" }}
+            whileHover={{ scale: 1.1, rotate: -2 }}
+            whileTap={{ scale: 0.9 }}
+            animate={{
+              boxShadow: [
+                "0 10px 30px rgba(236, 72, 153, 0.5)",
+                "0 10px 30px rgba(168, 85, 247, 0.5)",
+                "0 10px 30px rgba(6, 182, 212, 0.5)",
+                "0 10px 30px rgba(236, 72, 153, 0.5)",
+              ],
+            }}
+            transition={{
+              boxShadow: {
+                duration: 3,
+                repeat: Infinity,
+                ease: "easeInOut",
+              },
+            }}
           >
-            <span className="relative z-10">View Projects</span>
-            <motion.div
-              className="absolute inset-0 bg-gradient-to-r from-cyan-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity"
-              initial={false}
-            />
+            <span className="relative z-10">✨ View Projects</span>
           </motion.a>
 
           <motion.a
             href="#contact"
-            className="py-3 px-6 border-2 border-cyan-600/50 text-cyan-400 rounded-lg font-medium backdrop-blur-sm relative overflow-hidden group"
-            whileHover={{ scale: 1.05, y: -2 }}
-            whileTap={{ scale: 0.95 }}
+            className="py-4 px-8 border-4 border-yellow-400 text-yellow-300 rounded-full font-bold text-lg backdrop-blur-sm relative overflow-hidden"
+            style={{ fontFamily: "Fredoka, sans-serif" }}
+            whileHover={{ scale: 1.1, rotate: 2, borderColor: "#a855f7" }}
+            whileTap={{ scale: 0.9 }}
           >
-            <span className="relative z-10">Contact Me</span>
-            <motion.div
-              className="absolute inset-0 bg-cyan-600/10 opacity-0 group-hover:opacity-100 transition-opacity"
-              initial={false}
-            />
+            <span className="relative z-10">💬 Contact Me</span>
           </motion.a>
         </motion.div>
 
@@ -92,46 +107,45 @@ export const Home = () => {
               href="https://x.com/mariam_oalli"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-full bg-gray-800/50 backdrop-blur-sm border border-gray-700 hover:border-cyan-500 transition-colors"
-              whileHover={{ scale: 1.2, rotate: 5 }}
-              whileTap={{ scale: 0.9 }}
+              className="p-4 rounded-full bg-gradient-to-br from-pink-500/20 to-purple-500/20 backdrop-blur-sm border-3 border-pink-400/50 shadow-lg shadow-pink-500/30"
+              whileHover={{ scale: 1.3, rotate: 15, y: -5 }}
+              whileTap={{ scale: 0.8 }}
             >
-              <img src="./icons/twitter.png" alt="Twitter" className="w-6 h-6" />
+              <img src="./icons/twitter.png" alt="Twitter" className="w-7 h-7" />
             </motion.a>
             <motion.a
               href="https://github.com/mariamALLI"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-full bg-gray-800/50 backdrop-blur-sm border border-gray-700 hover:border-cyan-500 transition-colors"
-              whileHover={{ scale: 1.2, rotate: 5 }}
-              whileTap={{ scale: 0.9 }}
+              className="p-4 rounded-full bg-gradient-to-br from-cyan-500/20 to-blue-500/20 backdrop-blur-sm border-3 border-cyan-400/50 shadow-lg shadow-cyan-500/30"
+              whileHover={{ scale: 1.3, rotate: -15, y: -5 }}
+              whileTap={{ scale: 0.8 }}
             >
-              <img src="./icons/github.png" alt="GitHub" className="w-6 h-6" />
+              <img src="./icons/github.png" alt="GitHub" className="w-7 h-7" />
             </motion.a>
             <motion.a
               href="https://www.linkedin.com/in/mariam-alli-a7964b21a/"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-full bg-gray-800/50 backdrop-blur-sm border border-gray-700 hover:border-cyan-500 transition-colors"
-              whileHover={{ scale: 1.2, rotate: 5 }}
-              whileTap={{ scale: 0.9 }}
+              className="p-4 rounded-full bg-gradient-to-br from-yellow-500/20 to-orange-500/20 backdrop-blur-sm border-3 border-yellow-400/50 shadow-lg shadow-yellow-500/30"
+              whileHover={{ scale: 1.3, rotate: 15, y: -5 }}
+              whileTap={{ scale: 0.8 }}
             >
-              <img src="./icons/linkedin.png" alt="LinkedIn" className="w-6 h-6" />
+              <img src="./icons/linkedin.png" alt="LinkedIn" className="w-7 h-7" />
             </motion.a>
           </div>
         </motion.div>
 
         <motion.div
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-          animate={{ y: [0, 10, 0] }}
+          animate={{
+            y: [0, 15, 0],
+            rotate: [0, 10, -10, 0]
+          }}
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
         >
-          <div className="w-6 h-10 border-2 border-cyan-500 rounded-full flex justify-center">
-            <motion.div
-              className="w-1.5 h-1.5 bg-cyan-500 rounded-full mt-2"
-              animate={{ y: [0, 20, 0] }}
-              transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-            />
+          <div className="text-5xl">
+            👇
           </div>
         </motion.div>
       </motion.div>
