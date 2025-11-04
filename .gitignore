@@ -18,3 +18,6 @@ coverage/
 
 # VS Code settings (optional)
 .vscode/
+
+
+package-lock.json
