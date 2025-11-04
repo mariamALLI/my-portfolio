@@ -64,7 +64,7 @@ export const Home = () => {
                 {/* Main avatar */}
                 <div className="absolute inset-8 rounded-full bg-gradient-to-br from-pink-500/20 to-purple-500/20 border-4 border-yellow-400 shadow-2xl shadow-yellow-400/50 overflow-hidden">
                   <img
-                    src="src/assets/mariamalli.png"
+                    src="/mariamalli.png"
                     alt="Mariam Alli Avatar"
                     className="w-full h-full object-cover"
                   />
