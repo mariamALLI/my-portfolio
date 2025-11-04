@@ -4,7 +4,7 @@ export const Home = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center relative overflow-hidden"
+      className="min-h-screen flex items-center justify-evenly relative overflow-hidden"
     >
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -27,11 +27,11 @@ export const Home = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
 
           {/* Left Side - Avatar */}
           <motion.div
-            className="flex justify-center md:justify-end"
+            className="flex justify-center md:justify-evenly"
             initial={{ opacity: 0, scale: 0.5, x: -50 }}
             animate={{ opacity: 1, scale: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2, type: "spring" }}
@@ -64,20 +64,20 @@ export const Home = () => {
                 {/* Main avatar */}
                 <div className="absolute inset-8 rounded-full bg-gradient-to-br from-pink-500/20 to-purple-500/20 border-4 border-yellow-400 shadow-2xl shadow-yellow-400/50 overflow-hidden">
                   <img
-                    src="https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop"
+                    src="src/assets/mariamalli.png"
                     alt="Mariam Alli Avatar"
                     className="w-full h-full object-cover"
                   />
                 </div>
 
                 {/* Floating decorative elements */}
-                <motion.div
+                {/* <motion.div
                   className="absolute -top-6 -right-6 text-5xl"
                   animate={{ y: [0, -15, 0], rotate: [0, 20, -20, 0] }}
                   transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
                 >
                   ⭐
-                </motion.div>
+                </motion.div> */}
                 <motion.div
                   className="absolute -bottom-6 -left-6 text-5xl"
                   animate={{ y: [0, 15, 0], rotate: [0, -20, 20, 0] }}
@@ -91,14 +91,14 @@ export const Home = () => {
 
           {/* Right Side - Content */}
           <motion.div
-            className="flex flex-col justify-center"
+            className="flex flex-col justify-center px-4 md:px-0"
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4, type: "spring" }}
           >
             <motion.h1
-              className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-pink-400 via-yellow-400 to-cyan-400 bg-clip-text text-transparent"
-              style={{ fontFamily: "Fredoka, sans-serif" }}
+              className="text-5xl text-center md:text-left md:text-6xl font-bold mb-4 bg-gradient-to-r from-pink-400 via-yellow-400 to-cyan-400 bg-clip-text text-transparent"
+              style={{ fontFamily: "Aladin, system-ui" }}
               initial={{ opacity: 0, y: 30, scale: 0.8 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               transition={{
@@ -168,7 +168,7 @@ export const Home = () => {
 
             {/* Social Icons */}
             <motion.div
-              className="flex gap-4"
+              className="flex gap-4 justify-center md:justify-start"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 1.2 }}

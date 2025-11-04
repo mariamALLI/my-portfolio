@@ -83,7 +83,7 @@ const frontendSkil = [
                   whileInView="animate"
                   viewport={{ once: true }}
                 >
-                    {frontendSkil.map((skill, index) => (
+                    {frontendSkil.map((skill, _index) => (
                         <motion.div
                             key={skill.name}
                             className="items-center p-2 rounded-lg"
