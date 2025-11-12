@@ -31,7 +31,7 @@ export const Home = () => {
 
           {/* Left Side - Avatar */}
           <motion.div
-            className="flex justify-center md:justify-evenly"
+            className="flex justify-center md:justify-evenly mt-24 md:mb-0"
             initial={{ opacity: 0, scale: 0.5, x: -50 }}
             animate={{ opacity: 1, scale: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2, type: "spring" }}

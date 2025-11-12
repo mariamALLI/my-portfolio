@@ -61,7 +61,7 @@ const frontendSkil = [
             and user-friendly interfaces. My journey in web development started with a
             curiosity to understand how the web works, and it has since evolved
             into a full-fledged career. I enjoy working with modern technologies
-            like React, Tailwind CSS, and JavaScript to bring my ideas to life.
+            like Vue, React, Tailwind CSS, and JavaScript to bring my ideas to life.
               </p>
            </motion.div>
 
@@ -125,7 +125,7 @@ const frontendSkil = [
                             <li><strong>Diploma in Software Engineering (Frontend)</strong> - AltSchool Africa (2024/25)</li>
                             <p className="text-gray-300 mb-6 mt-2 text-sm leading-6">
                                <em> Relevant courses:</em>
-                               <span className="text-cyan-300"> HTML, CSS, and JavaScript,React, TypeScript, Git and GitHub,Responsive Web Design, UI/UX Design Principles, Agile Methodologies, Web Accessibility, Testing and Debugging, Deployment and Hosting, API Integration, Performance Optimization, Cross-Browser Compatibility, Progressive Web Apps (PWAs), Web Security Best Practices</span>
+                               <span className="text-cyan-300"> HTML, CSS, and JavaScript, Vue, Nextjs, React, TypeScript, Git and GitHub,Responsive Web Design, UI/UX Design Principles, Agile Methodologies, Web Accessibility, Testing and Debugging, Deployment and Hosting, API Integration, Performance Optimization, Cross-Browser Compatibility, Progressive Web Apps (PWAs), Web Security Best Practices</span>
                             </p>
 
                             <li><strong>Certificate in Web Development</strong> - FreeCodeCamp (2023)</li>
