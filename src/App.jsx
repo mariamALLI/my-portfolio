@@ -6,6 +6,7 @@ import { MobileMenu } from "./components/mobileMenu";
 import { Home } from "/src/components/sections/home.jsx";
 import { About } from "/src/components/sections/about.jsx";
 import { Projects } from "/src/components/sections/projects";
+import { HireMe } from "/src/components/sections/hireme.jsx";
 import { Contact } from "/src/components/sections/contact";
 import emailjs from "@emailjs/browser";
 
@@ -33,6 +34,7 @@ useEffect(function() {
       <Home />
       <About />
       <Projects />
+      <HireMe />
       <Contact />
     </div>
     </>

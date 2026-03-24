@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion'
 
 export const Home = () => {
   return (
@@ -16,7 +16,7 @@ export const Home = () => {
           transition={{
             duration: 20,
             repeat: Infinity,
-            ease: "linear",
+            ease: 'linear',
           }}
         />
       </div>
@@ -25,16 +25,15 @@ export const Home = () => {
         className="z-10 px-4 md:px-8 w-full max-w-6xl"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
+        transition={{ duration: 0.8, ease: 'easeOut' }}
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
-
           {/* Left Side - Avatar */}
           <motion.div
             className="flex justify-center md:justify-evenly mt-24 md:mb-0"
             initial={{ opacity: 0, scale: 0.5, x: -50 }}
             animate={{ opacity: 1, scale: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2, type: "spring" }}
+            transition={{ duration: 0.8, delay: 0.2, type: 'spring' }}
           >
             <motion.div
               className="relative"
@@ -45,7 +44,7 @@ export const Home = () => {
               transition={{
                 duration: 4,
                 repeat: Infinity,
-                ease: "easeInOut",
+                ease: 'easeInOut',
               }}
             >
               <div className="relative w-64 h-64 md:w-80 md:h-80">
@@ -53,12 +52,12 @@ export const Home = () => {
                 <motion.div
                   className="absolute inset-0 rounded-full border-4 border-pink-400/60"
                   animate={{ rotate: 360 }}
-                  transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
+                  transition={{ duration: 8, repeat: Infinity, ease: 'linear' }}
                 />
                 <motion.div
                   className="absolute inset-4 rounded-full border-4 border-cyan-400/40"
                   animate={{ rotate: -360 }}
-                  transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
+                  transition={{ duration: 10, repeat: Infinity, ease: 'linear' }}
                 />
 
                 {/* Main avatar */}
@@ -70,18 +69,10 @@ export const Home = () => {
                   />
                 </div>
 
-                {/* Floating decorative elements */}
-                {/* <motion.div
-                  className="absolute -top-6 -right-6 text-5xl"
-                  animate={{ y: [0, -15, 0], rotate: [0, 20, -20, 0] }}
-                  transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                >
-                  ⭐
-                </motion.div> */}
                 <motion.div
                   className="absolute -bottom-6 -left-6 text-5xl"
                   animate={{ y: [0, 15, 0], rotate: [0, -20, 20, 0] }}
-                  transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+                  transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut', delay: 0.5 }}
                 >
                   ✨
                 </motion.div>
@@ -94,18 +85,18 @@ export const Home = () => {
             className="flex flex-col justify-center px-4 md:px-0"
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.4, type: "spring" }}
+            transition={{ duration: 0.8, delay: 0.4, type: 'spring' }}
           >
             <motion.h1
               className="text-5xl text-center md:text-left md:text-6xl font-bold mb-4 bg-gradient-to-r from-pink-400 via-yellow-400 to-cyan-400 bg-clip-text text-transparent"
-              style={{ fontFamily: "Aladin, system-ui" }}
+              style={{ fontFamily: 'Aladin, system-ui' }}
               initial={{ opacity: 0, y: 30, scale: 0.8 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               transition={{
                 duration: 0.8,
                 delay: 0.6,
-                type: "spring",
-                stiffness: 200
+                type: 'spring',
+                stiffness: 200,
               }}
             >
               Hi, I'm Mariam Alli 👋
@@ -117,54 +108,78 @@ export const Home = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
             >
-              I'm a frontend engineer passionate about building beautiful and
-              functional web applications. I enjoy learning new technologies, applying the use of AI in my projects,
-              contributing to open-source projects, and am seeking a full-time frontend
-              engineering position. Feel free to reach out!
+              Frontend Developer (React & Next.js) I build responsive, user-focused web applications
+              with modern technologies, integrating real-world APIs and delivering seamless user
+              experiences. Skilled in React, Next.js, JavaScript, Vue.js and Tailwind CSS.
+              Passionate about building clean, scalable, and accessible web interfaces.
             </motion.p>
 
             {/* Buttons */}
             <motion.div
-              className="flex flex-col sm:flex-row gap-4 mb-8"
+              className="flex flex-col gap-4 mb-8"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1 }}
             >
+              {/* project */}
               <motion.a
                 href="#projects"
-                className="bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 text-white py-4 px-8 rounded-full font-bold text-lg relative overflow-hidden shadow-lg shadow-pink-500/50 text-center"
-                style={{ fontFamily: "Fredoka, sans-serif" }}
+                className="bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 text-white py-2 px-8 rounded-full font-bold text-sm relative overflow-hidden shadow-lg shadow-pink-500/50 text-center"
+                style={{ fontFamily: 'Fredoka, sans-serif' }}
                 whileHover={{ scale: 1.1, rotate: -2 }}
                 whileTap={{ scale: 0.9 }}
                 animate={{
                   boxShadow: [
-                    "0 10px 30px rgba(236, 72, 153, 0.5)",
-                    "0 10px 30px rgba(168, 85, 247, 0.5)",
-                    "0 10px 30px rgba(6, 182, 212, 0.5)",
-                    "0 10px 30px rgba(236, 72, 153, 0.5)",
+                    '0 10px 30px rgba(236, 72, 153, 0.5)',
+                    '0 10px 30px rgba(168, 85, 247, 0.5)',
+                    '0 10px 30px rgba(6, 182, 212, 0.5)',
+                    '0 10px 30px rgba(236, 72, 153, 0.5)',
                   ],
                 }}
                 transition={{
                   boxShadow: {
                     duration: 3,
                     repeat: Infinity,
-                    ease: "easeInOut",
+                    ease: 'easeInOut',
                   },
                 }}
               >
                 <span className="relative z-10">✨ View Projects</span>
               </motion.a>
 
+              {/* contact button */}
               <motion.a
                 href="#contact"
-                className="py-4 px-8 border-4 border-yellow-400 text-yellow-300 rounded-full font-bold text-lg backdrop-blur-sm relative overflow-hidden text-center"
-                style={{ fontFamily: "Fredoka, sans-serif" }}
-                whileHover={{ scale: 1.1, rotate: 2, borderColor: "#a855f7" }}
+                className="py-2 px-6 border-4 border-yellow-400 text-yellow-300 rounded-full font-bold text-sm backdrop-blur-sm relative overflow-hidden text-center"
+                style={{ fontFamily: 'Fredoka, sans-serif' }}
+                whileHover={{ scale: 1.1, rotate: 2, borderColor: '#a855f7' }}
                 whileTap={{ scale: 0.9 }}
               >
                 <span className="relative z-10">💬 Contact Me</span>
               </motion.a>
+
+              {/* add resume button */}
+              <motion.a
+                href="/Mariam_Alli_Resume_final.docx"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="py-2 px-6 border-4 border-cyan-400 text-cyan-300 rounded-full font-bold text-sm backdrop-blur-sm relative overflow-hidden text-center"
+                style={{ fontFamily: 'Fredoka, sans-serif' }}
+                whileHover={{ scale: 1.1, rotate: -2, borderColor: '#06b6d4' }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <span className="relative z-10">📄 View Resume</span>
+              </motion.a>
             </motion.div>
+
+            <motion.p
+              className="text-green-400 text-base md:text-lg mb-8 leading-relaxed"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.8 }}
+            >
+              🚀 Currently open to remote frontend roles and freelance opportunities
+            </motion.p>
 
             {/* Social Icons */}
             <motion.div
@@ -211,15 +226,13 @@ export const Home = () => {
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
           animate={{
             y: [0, 15, 0],
-            rotate: [0, 10, -10, 0]
+            rotate: [0, 10, -10, 0],
           }}
-          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+          transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
         >
-          <div className="text-5xl">
-            👇
-          </div>
+          <div className="text-5xl">👇</div>
         </motion.div>
       </motion.div>
     </section>
-  );
-};
+  )
+}

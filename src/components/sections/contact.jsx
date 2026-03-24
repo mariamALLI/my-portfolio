@@ -17,44 +17,54 @@ const staggerContainer = {
 }
 
 export const Contact = () => {
-    const [formData, setFormData] = useState({
-      name: "",
-      email: "",
-      message: "",
-    });
-    const [formStatus, setFormStatus] = useState({
-        success: false,
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  })
+  const [formStatus, setFormStatus] = useState({
+    success: false,
+    submitting: false,
+    error: false,
+    message: '',
+  })
+
+  const handleChangeInput = (e) => {
+    const { name, value } = e.target
+    setFormData((prevData) => ({ ...prevData, [name]: value }))
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    setFormStatus({ success: false, submitting: true, error: false, message: '' })
+
+    try {
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        {
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        },
+      )
+      setFormStatus({
+        success: true,
         submitting: false,
         error: false,
-        message: "",
-    });
-
-    const handleChangeInput = (e) => {
-      const { name, value } = e.target;
-      setFormData((prevData) => ({ ...prevData, [name]: value }));
-    };
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        setFormStatus({  success: false,
-        submitting: true,
-        error: false,
-        message: "", });
-
-        try{
-            await emailjs.send(import.meta.env.VITE_EMAILJS_SERVICE_ID, import.meta.env.VITE_EMAILJS_TEMPLATE_ID,{
-                name: formData.name,
-                email: formData.email,
-                message: formData.message
-            });
-            setFormStatus({ success: true, submitting: false, error: false, message: "Message sent successfully!" });
-            setFormData({ name: "", email: "", message: "" });
-        }
-        catch (error) {
-          console.error(error);
-          setFormStatus({ success: false, submitting: false, error: true, message: "Failed to send message." });
-        }
+        message: 'Message sent successfully!',
+      })
+      setFormData({ name: '', email: '', message: '' })
+    } catch (error) {
+      console.error(error)
+      setFormStatus({
+        success: false,
+        submitting: false,
+        error: true,
+        message: 'Failed to send message.',
+      })
     }
+  }
 
   return (
     <motion.section
@@ -71,10 +81,22 @@ export const Contact = () => {
         whileInView="animate"
         viewport={{ once: true }}
         className="text-5xl font-bold mb-12 bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent text-center"
-        style={{ fontFamily: "Fredoka, sans-serif" }}
+        style={{ fontFamily: 'Fredoka, sans-serif' }}
       >
         📬 Get in Touch
       </motion.h2>
+
+      <motion.p
+        variants={fadeInUp}
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true }}
+        className="text-yellow-100 text-xl mb-8 text-center leading-relaxed max-w-xl mx-auto"
+      >
+        I’m currently open to remote frontend opportunities and collaborations. If you’re looking
+        for a developer who is committed to building high-quality user experiences, feel free to
+        reach out. I’d love to hear about your project and how I can contribute!
+      </motion.p>
 
       <motion.div
         className="contact-content"
@@ -111,24 +133,19 @@ export const Contact = () => {
             variants={fadeInUp}
           ></motion.textarea>
           <motion.button
-            className='submit-btn'
+            className="submit-btn"
             type="submit"
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
             disabled={formStatus.submitting}
             variants={fadeInUp}
           >
-            {formStatus.submitting ? "Sending..." : "Send Message"}
+            {formStatus.submitting ? 'Sending...' : 'Send Message'}
           </motion.button>
 
-
           {/* Success or Error Message */}
-           {formStatus.message && (
-            <motion.div
-              className={`form-status ${
-                formStatus.success ? "success" : "error"
-              } `}
-            >
+          {formStatus.message && (
+            <motion.div className={`form-status ${formStatus.success ? 'success' : 'error'} `}>
               {formStatus.message}
             </motion.div>
           )}

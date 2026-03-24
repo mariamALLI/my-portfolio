@@ -1,10 +1,10 @@
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion'
 
 const fadeInUp = {
   initial: { opacity: 0, y: 60 },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6, ease: "easeOut" },
-};
+  transition: { duration: 0.6, ease: 'easeOut' },
+}
 
 const staggerContainer = {
   animate: {
@@ -12,7 +12,7 @@ const staggerContainer = {
       staggerChildren: 0.15,
     },
   },
-};
+}
 
 export const Projects = () => {
   return (
@@ -41,42 +41,6 @@ export const Projects = () => {
         whileInView="animate"
         viewport={{ once: true, amount: 0.2 }}
       >
-        <a href="https://ecomerce-pg.netlify.app/" target="_blank" rel="noopener noreferrer">
-          <motion.div
-            className="project-card"
-            variants={fadeInUp}
-            whileHover={{ y: -15, scale: 1.03, transition: { duration: 0.3, ease: 'easeOut' } }}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-          >
-            <motion.div
-              className="project-image"
-              style={{ backgroundImage: "url('./project-images/ecommerce.jpg')" }}
-              whileHover={{ scale: 1.1, transition: { duration: 0.4 } }}
-            />
-            <h3>E-commerce Page</h3>
-            <p>
-              A modern E-commerce product page built with React, shadcn and framer motion
-              integration, featuring real-time product visualization and smooth animations.
-            </p>
-            <div className="project-tech">
-              <span>
-                <img src="./icons/react.png" alt="react icon" />
-              </span>
-              <span>
-                <img src="./icons/vite.png" alt="vite icon" />
-              </span>
-              <span>
-                <img src="./icons/tailwindcss.png" alt="tailwindcss icon" />
-              </span>
-              <span>
-                <img src="./icons/motion.png" alt="motion icon" />
-              </span>
-            </div>
-          </motion.div>
-        </a>
-
         <a href="https://shoplistmaker.netlify.app/" target="_blank" rel="noopener noreferrer">
           <motion.div
             className="project-card"
@@ -114,42 +78,17 @@ export const Projects = () => {
               </span>
             </div>
           </motion.div>
-        </a>
-
-        <a href="https://interactive-crd.netlify.app/" target="_blank" rel="noopener noreferrer">
-          <motion.div
-            className="project-card"
-            variants={fadeInUp}
-            whileHover={{ y: -10, transition: { duration: 0.2 } }}
-          >
-            <motion.div
-              className="project-image"
-              style={{
-                backgroundImage: "url('./project-images/interactive-card.jpg')",
-              }}
-              whileHover={{ scale: 1.05 }}
-              transition={{ duration: 0.2 }}
-            />
-            <h3>Interactive Card</h3>
-            <p>
-              A sleek interactive card component with real time interactions and responsive design,
-              built with React and TypeScript with skeleton loading animations.
-            </p>
-            <div className="project-tech">
-              <span>
-                <img src="./icons/react.png" alt="react icon" />
-              </span>
-              <span>
-                <img src="./icons/typescript.png" alt="typescript icon" />
-              </span>
-              <span>
-                <img src="./icons/css3.png" alt="css icon" />
-              </span>
-              <span>
-                <img src="./icons/vite.png" alt="vite icon" />
-              </span>
-            </div>
-          </motion.div>
+          <span>
+            <a
+              href="https://github.com/mariamALLI/my-special-list-maker.git"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex justify-center items-center gap-2 mt-4 text-md text-gray-300 hover:text-gray-100 transition-colors duration-200"
+            >
+              <img src="./icons/github.png" alt="github icon" />
+              <p>Click Github Repository</p>
+            </a>
+          </span>
         </a>
 
         <a href="https://nextjtodo.netlify.app/" target="_blank" rel="noopener noreferrer">
@@ -189,6 +128,17 @@ export const Projects = () => {
               </span>
             </div>
           </motion.div>
+          <span>
+            <a
+              href="https://github.com/mariamALLI/nextjs-todo.git"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex justify-center items-center gap-2 mt-4 text-md text-gray-300 hover:text-gray-100 transition-colors duration-200"
+            >
+              <img src="./icons/github.png" alt="github icon" />
+              <p>Click Github Repository</p>
+            </a>
+          </span>
         </a>
 
         <a href="https://vue-space-toursm.netlify.app/" target="_blank" rel="noopener noreferrer">
@@ -228,6 +178,17 @@ export const Projects = () => {
               </span>
             </div>
           </motion.div>
+          <span>
+            <a
+              href="https://github.com/mariamALLI/vue-space-tourism.git"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex justify-center items-center gap-2 mt-4 text-md text-gray-300 hover:text-gray-100 transition-colors duration-200"
+            >
+              <img src="./icons/github.png" alt="github icon" />
+              <p>Click Github Repository</p>
+            </a>
+          </span>
         </a>
 
         <a href="https://instaspot.netlify.app/" target="_blank" rel="noopener noreferrer">
@@ -264,8 +225,19 @@ export const Projects = () => {
               </span>
             </div>
           </motion.div>
+          <span>
+            <a
+              href="https://github.com/mariamALLI/react-instaSpot.git"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex justify-center items-center gap-2 mt-4 text-md text-gray-300 hover:text-gray-100 transition-colors duration-200"
+            >
+              <img src="./icons/github.png" alt="github icon" />
+              <p>Click Github Repository</p>
+            </a>
+          </span>
         </a>
       </motion.div>
     </motion.section>
   )
-};
+}
