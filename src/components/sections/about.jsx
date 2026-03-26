@@ -20,7 +20,7 @@ export const About = () => {
     { name: 'CSS', icon: 'css3' },
     { name: 'JavaScript', icon: 'javascript' },
     { name: 'React', icon: 'react' },
-    { name: 'Tailwind CSS', icon: 'tailwindcss' },
+    { name: 'Tailwind', icon: 'tailwindcss' },
     { name: 'TypeScript', icon: 'typescript' },
     { name: 'Git', icon: 'git' },
     { name: 'GitHub', icon: 'github' },
@@ -28,6 +28,7 @@ export const About = () => {
     { name: 'Canva', icon: 'canva' },
     { name: 'Vue', icon: 'vue' },
     { name: 'Netlify', icon: 'netlify' },
+    {name: 'Nextjs', icon: 'nextjs'},
   ]
 
   return (
@@ -38,7 +39,7 @@ export const About = () => {
       whileInView="animate"
       viewport={{ once: true, amount: 0.3 }}
     >
-      <div className="max-w-3xl max-auto px-4">
+      <div className="py-20 px-6 max-w-6xl mx-auto space-y-10">
         <motion.h2
           className="text-5xl font-bold mb-12 bg-gradient-to-r from-pink-400 via-purple-400 to-cyan-400
               bg-clip-text text-transparent text-center"

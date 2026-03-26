@@ -31,7 +31,7 @@
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(1fr));
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -46,9 +46,11 @@
   border: 3px solid var(--card-border);
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   cursor: pointer;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px); 
+  /* z-index: 1; */
+  /* justify-content: space-evenly; */
 }
 
 .project-card::before {
@@ -80,12 +82,11 @@
 }
 
 .project-image {
-  height: 240px;
-  background-size: cover;
-  background-position: center;
+  height: 400px;
   position: relative;
   overflow: hidden;
 }
+
 
 .project-image::after {
   content: "";
@@ -120,6 +121,11 @@
   flex-grow: 1;
 }
 
+.project-card ul {
+  padding: 0 1.5rem 1rem;
+  color: var(--light-text);
+}
+
 .project-tech {
   padding: 0 1.5rem 1.5rem;
   display: flex;
@@ -143,15 +149,24 @@
   margin-right: 0.5rem;
 }
 
+
+@media (max-width: 375px) {
+
+  .project-card {
+    flex-direction: column;
+    height: 500px;
+  }
+}
+
 /* contact section */
 
-.contact, .about {
+.contact, .about, .hireme {
   padding: 6rem 5%;
   /* background: var(--section-bg); */
   position: relative;
 }
 
-
+.hireme::before,
 .about::before,
 .projects::before,
 .contact::before {
