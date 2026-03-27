@@ -42,18 +42,15 @@ export const Projects = () => {
           whileInView="animate"
           viewport={{ once: true, amount: 0.2 }}
         >
-          <h2 className="text-3xl">Smart Shopping List App </h2>
+          {/* Smart Shopping List Project */}
           <a href="https://shoplistmaker.netlify.app/" target="_blank" rel="noopener noreferrer">
             <motion.div
-              className="project-card"
+              className="project-card card"
               variants={fadeInUp}
               whileHover={{ y: -10, transition: { duration: 0.2 } }}
             >
               <motion.div
                 className="project-image"
-                // style={{
-                //   backgroundImage: "url('./project-images/smart-shopping.png')",
-                // }}
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.2 }}
               />
@@ -62,6 +59,8 @@ export const Projects = () => {
                 src="./project-images/smart-shopping.png"
               ></motion.img>
               <div className="project-description">
+                {/* Project title */}
+                <h3 className="text-xl">Smart Shopping List App </h3>
                 {/* project description */}
                 <h4 className="text-yellow-200 text-xl pl-5">Description</h4>
                 <p className="desc">
@@ -151,43 +150,97 @@ export const Projects = () => {
             </span>
           </a>
 
+          {/* Todo Project */}
           <a href="https://nextjtodo.netlify.app/" target="_blank" rel="noopener noreferrer">
             <motion.div
-              className="project-card"
+              className="project-card card"
               variants={fadeInUp}
               whileHover={{ y: -10, transition: { duration: 0.2 } }}
             >
               <motion.div
                 className="project-image"
-                style={{
-                  backgroundImage: "url('./project-images/react-todo.png')",
-                }}
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.2 }}
               />
-              <h3>Todo App</h3>
-              <p>
-                A sleek todo app built with Nextjs, featuring real-time task updates, authentication
-                and a clean user interface.
-              </p>
-              <div className="project-tech">
-                <span>
-                  <img src="./icons/Next.js.png" alt="react icon" />
-                </span>
-                <span>
-                  <img src="./icons/tailwindcss.png" alt="tailwind icon" />
-                </span>
-                <span>
-                  <img src="./icons/Bun.png" alt="bun icon" />
-                </span>
-                <span>
-                  <img src="./icons/tanstack.png" alt="tanstack icon" />
-                </span>
-                <span>
-                  <img src="./icons/Material UI.png" alt="materialui icon" />
-                </span>
+              <motion.img
+                className="h-70 md:h-100 mb-4"
+                src="./project-images/react-todo.png"
+              ></motion.img>
+              <div>
+                {/* Project title */}
+                <h3 className="text-xl"> Todo App with Authentication & API Integration </h3>
+                {/* project description */}
+                <h4 className="text-yellow-200 text-xl pl-5">Description</h4>
+                <p>
+                  A full-featured todo application with authentication, real-time data fetching, and
+                  developer-focused debugging insights.
+                </p>
+                {/* Project features */}
+                <h4 className="text-yellow-200 text-xl pl-5">🔧Key features:</h4>
+                <motion.ul
+                  className="project-features "
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4, delay: 0.3 }}
+                >
+                  <li>User authentication with Google and GitHub using NextAuth.</li>
+                  <li>Full CRUD functionality for managing tasks.</li>
+                  <li>API-driven data fetching with TanStack Query.</li>
+                  <li>
+                    Debug panel displaying authentication session data for development insights.
+                  </li>
+                </motion.ul>
+
+                {/* Tech stack */}
+                <h4 className="text-yellow-200 text-xl pl-5">🛠Tech Stack:</h4>
+                <div className="project-tech">
+                  <span>
+                    <img src="./icons/Next.js.png" alt="react icon" />
+                  </span>
+                  <span>
+                    <img src="./icons/tailwindcss.png" alt="tailwind icon" />
+                  </span>
+                  <span>
+                    <img src="./icons/Bun.png" alt="bun icon" />
+                  </span>
+                  <span>
+                    <img src="./icons/tanstack.png" alt="tanstack icon" />
+                  </span>
+                  <span>
+                    <img src="./icons/Material UI.png" alt="materialui icon" />
+                  </span>
+                </div>
+
+                {/* Challenges */}
+                <div className="project-challenges">
+                  <h4 className="text-yellow-200 text-xl pl-5">🚧 Challenges:</h4>
+                  <motion.p
+                    className="project-features "
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, delay: 0.3 }}
+                  >
+                    Handling authentication flows and managing asynchronous API state efficiently
+                    across the application.
+                  </motion.p>
+                </div>
+
+                {/* Impact of project */}
+                <div className="project-impact">
+                  <h4 className="text-yellow-200 text-xl pl-5">📈 Impact:</h4>
+                  <motion.p
+                    className="desc"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, delay: 0.3 }}
+                  >
+                    Demonstrates understanding of authentication systems, API integration, and
+                    modern frontend architecture.
+                  </motion.p>
+                </div>
               </div>
             </motion.div>
+
             <span>
               <a
                 href="https://github.com/mariamALLI/nextjs-todo.git"
@@ -201,93 +254,101 @@ export const Projects = () => {
             </span>
           </a>
 
+          {/* Space Tourism Project */}
           <a href="https://vue-space-toursm.netlify.app/" target="_blank" rel="noopener noreferrer">
             <motion.div
-              className="project-card"
+              className="project-card card"
               variants={fadeInUp}
               whileHover={{ y: -10, transition: { duration: 0.2 } }}
             >
               <motion.div
                 className="project-image"
-                style={{
-                  backgroundImage: "url('./project-images/space-tourism.png')",
-                }}
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.2 }}
               />
-              <h3>Space Tourism</h3>
-              <p>
-                A visually stunning space tourism website showcasing various intergalactic travel
-                packages.
-              </p>
-              <div className="project-tech">
-                <span>
-                  <img src="./icons/vue.jpeg" alt="react icon" />
-                </span>
-                <span>
-                  <img src="./icons/tailwindcss.png" alt="tailwind icon" />
-                </span>
-                <span>
-                  <img src="./icons/vite.png" alt="vite icon" />
-                </span>
-                <span>
-                  <img src="./icons/typescript.png" alt="typescript icon" />
-                </span>
-                <span>
-                  <img src="./icons/framer-motion.png" alt="vueuse-motion" />
-                </span>
+              <motion.img
+                className="h-70 md:h-100 mb-4"
+                src="./project-images/space-tourism.png"
+              ></motion.img>
+
+              <div>
+                {/* Project title */}
+                <h3 className="text-xl"> Space Tourism Website (Vue.js Project)</h3>
+                {/* project description */}
+                <h4 className="text-yellow-200 text-xl pl-5">Description</h4>
+                <p>
+                  A multi-page space tourism website that delivers an immersive user experience
+                  through dynamic layouts, smooth navigation, and modern UI interactions.
+                </p>
+                {/* Project features */}
+                <h4 className="text-yellow-200 text-xl pl-5">🔧Key features:</h4>
+                <motion.ul
+                  className="project-features "
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4, delay: 0.3 }}
+                >
+                  <li>
+                    Dynamic UI layout with responsive design across mobile, tablet, and desktop.
+                  </li>
+                  <li>
+                    Seamless page navigation using Vue Router (Home, Destination, Crew, Technology).
+                  </li>
+                  <li>Interactive animations for enhanced user experience using Framer Motion.</li>
+                  <li>Component-based architecture for scalable and reusable UI elements.</li>
+                </motion.ul>
+
+                {/* Tech Stack */}
+                <div className="project-tech">
+                  <span>
+                    <img src="./icons/vue.jpeg" alt="react icon" />
+                  </span>
+                  <span>
+                    <img src="./icons/tailwindcss.png" alt="tailwind icon" />
+                  </span>
+                  <span>
+                    <img src="./icons/vite.png" alt="vite icon" />
+                  </span>
+                  <span>
+                    <img src="./icons/typescript.png" alt="typescript icon" />
+                  </span>
+                  <span>
+                    <img src="./icons/framer-motion.png" alt="vueuse-motion" />
+                  </span>
+                </div>
+                {/* Challenges */}
+                <div className="project-challenges">
+                  <h4 className="text-yellow-200 text-xl pl-5">🚧 Challenges:</h4>
+                  <motion.p
+                    className="project-features "
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, delay: 0.3 }}
+                  >
+                    Managing dynamic linking and navigation within the same page while ensuring
+                    smooth transitions across routes. This required careful handling of routing
+                    logic and component state to maintain consistency in the user experience.
+                  </motion.p>
+                </div>
+
+                {/* Impact of project */}
+                <div className="project-impact">
+                  <h4 className="text-yellow-200 text-xl pl-5">📈 Impact:</h4>
+                  <motion.p
+                    className="project-features "
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, delay: 0.3 }}
+                  >
+                    Demonstrates strong understanding of modern frontend architecture, routing
+                    systems, and building visually engaging interfaces with smooth transitions.
+                  </motion.p>
+                </div>
               </div>
             </motion.div>
             <span>
               <a
                 href="https://github.com/mariamALLI/vue-space-tourism.git"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex justify-center items-center gap-2 mt-4 text-md text-gray-300 hover:text-gray-100 transition-colors duration-200"
-              >
-                <img src="./icons/github.png" alt="github icon" />
-                <p>Click Github Repository</p>
-              </a>
-            </span>
-          </a>
-
-          <a href="https://instaspot.netlify.app/" target="_blank" rel="noopener noreferrer">
-            <motion.div
-              className="project-card"
-              variants={fadeInUp}
-              whileHover={{ y: -10, transition: { duration: 0.2 } }}
-            >
-              <motion.div
-                className="project-image"
-                style={{
-                  backgroundImage: "url('./project-images/instaspot2.png')",
-                }}
-                whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.2 }}
-              />
-              <h3>Instaspot</h3>
-              <p>
-                A photo-sharing app that allows users to capture and share their moments in an
-                instant.
-              </p>
-              <div className="project-tech">
-                <span>
-                  <img src="./icons/react.png" alt="react icon" />
-                </span>
-                <span>
-                  <img src="./icons/typescript.png" alt="typescript icon" />
-                </span>
-                <span>
-                  <img src="./icons/css3.png" alt="css icon" />
-                </span>
-                <span>
-                  <img src="./icons/vite.png" alt="vite icon" />
-                </span>
-              </div>
-            </motion.div>
-            <span>
-              <a
-                href="https://github.com/mariamALLI/react-instaSpot.git"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex justify-center items-center gap-2 mt-4 text-md text-gray-300 hover:text-gray-100 transition-colors duration-200"
