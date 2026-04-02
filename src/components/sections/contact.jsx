@@ -86,6 +86,7 @@ export const Contact = () => {
         📬 Get in Touch
       </motion.h2>
 
+      {/* Updated availability text to reflect internship/entry-level search */}
       <motion.p
         variants={fadeInUp}
         initial="initial"
@@ -93,9 +94,9 @@ export const Contact = () => {
         viewport={{ once: true }}
         className="text-yellow-100 text-xl mb-8 text-center leading-relaxed max-w-xl mx-auto"
       >
-        I’m currently open to remote frontend opportunities and collaborations. If you’re looking
-        for a developer who is committed to building high-quality user experiences, feel free to
-        reach out. I’d love to hear about your project and how I can contribute!
+        I'm currently looking for entry-level frontend roles and internship opportunities. If you're
+        looking for a developer who is committed to building high-quality user experiences and eager
+        to grow within a team, feel free to reach out — I'd love to hear from you!
       </motion.p>
 
       <motion.div

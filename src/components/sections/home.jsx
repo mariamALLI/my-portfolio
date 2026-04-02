@@ -178,7 +178,7 @@ export const Home = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
             >
-              🚀 Currently open to remote frontend roles and freelance opportunities
+              🚀 Currently open to entry-level roles, internships, and junior frontend opportunities
             </motion.p>
 
             {/* Social Icons */}
