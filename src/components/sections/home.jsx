@@ -160,7 +160,7 @@ export const Home = () => {
 
               {/* add resume button */}
               <motion.a
-                href="/Mariam_Alli_Resume_v2.docx"
+                href="/Mariam_Alli_Resume_v3.docx"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="py-2 px-6 border-4 border-cyan-400 text-cyan-300 rounded-full font-bold text-sm backdrop-blur-sm relative overflow-hidden text-center"
