@@ -35,8 +35,9 @@ export const About = () => {
     <motion.section
       id="about"
       className="about min-h-screen flex items-center justify-center py-20"
-      initial="initial"
-      whileInView="animate"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.6 }}
       viewport={{ once: true, amount: 0.3 }}
     >
       <div className="py-20 px-6 max-w-6xl mx-auto space-y-10">
@@ -171,13 +172,18 @@ export const About = () => {
               💼 Experience
             </h3>
             <div className="relative z-10 space-y-5 text-sm leading-7">
-
               <div>
                 <p className="font-bold text-white">Frontend Engineering Trainee</p>
                 <p className="text-pink-400 text-xs mb-1">AltSchool Africa · Nov 2024 – Nov 2025</p>
                 <ul className="list-disc list-inside text-gray-300 space-y-1">
-                  <li>Served as <span className="text-yellow-300 font-semibold">lead frontend developer</span> on the AltHub team project, also assisting as dev team lead</li>
-                  <li>Built and deployed responsive apps using React, Next.js, TypeScript & Vue.js</li>
+                  <li>
+                    Served as{' '}
+                    <span className="text-yellow-300 font-semibold">lead frontend developer</span>{' '}
+                    on the AltHub team project, also assisting as dev team lead
+                  </li>
+                  <li>
+                    Built and deployed responsive apps using React, Next.js, TypeScript & Vue.js
+                  </li>
                   <li>Integrated REST APIs, conducted code reviews, and worked in agile sprints</li>
                   <li>Contributed to open-source — Lucide Icons on GitHub</li>
                 </ul>
@@ -192,7 +198,6 @@ export const About = () => {
                   <li>Supported pre-deployment testing and bug triage</li>
                 </ul>
               </div>
-
             </div>
           </motion.div>
         </motion.div>
